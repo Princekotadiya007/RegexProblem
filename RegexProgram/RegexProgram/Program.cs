@@ -15,7 +15,7 @@ namespace RegexProgram
             while (flge)
             {
                 Console.WriteLine("Welcom to User Registration");
-                Console.WriteLine("\n1.ValidFirstName,\n2.ValidLastName,\n3.ValidEmaiId,\n4.MoblieNumber,\n5.PasswordRule1,\n6.PasswordRule2,\n7.PasswordRule3");
+                Console.WriteLine("\n1.ValidFirstName,\n2.ValidLastName,\n3.ValidEmaiId,\n4.MoblieNumber,\n5.PasswordRule1,\n6.PasswordRule2,\n7.PasswordRule3,\n8.PasswordRule4");
                 Console.WriteLine("choose the option");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -43,6 +43,9 @@ namespace RegexProgram
                         regex.ValidatePasswordRule3("PK007PRINCE7");
                         break;
                     case 8:
+                        regex.ValidatePasswordRule4("PRINCE07@");
+                        break;
+                    case 9:
                         flge = false;
                         break;
                 }
