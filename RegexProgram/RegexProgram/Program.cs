@@ -15,7 +15,7 @@ namespace RegexProgram
             while (flge)
             {
                 Console.WriteLine("Welcom to User Registration");
-                Console.WriteLine("\n1.ValidFirstName,\n2.ValidLastName,\n3.ValidEmaiId,\n4.MoblieNumber");
+                Console.WriteLine("\n1.ValidFirstName,\n2.ValidLastName,\n3.ValidEmaiId,\n4.MoblieNumber,\n5.PasswordRule1");
                 Console.WriteLine("choose the option");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -34,6 +34,9 @@ namespace RegexProgram
                         regex.PhoneNumber("91 6352129268");
                         break;
                     case 5:
+                        regex.ValidatePasswordRule1("Princes7");
+                        break;
+                    case 6:
                         flge = false;
                         break;
                 }

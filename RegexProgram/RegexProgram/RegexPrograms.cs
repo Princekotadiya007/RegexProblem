@@ -59,5 +59,17 @@ namespace RegexProgram
                 Console.WriteLine("Moblie Number is not Valid");
             }
         }
+        public void ValidatePasswordRule1(string password)
+        {
+            string passwordPatten = @"[A-Z a-z 0-9]{8,}";
+            if(Regex.IsMatch(password, passwordPatten))
+            {
+                Console.WriteLine("password is valid");
+            }
+            else
+            {
+                Console.WriteLine("password is not valid");
+            }
+        }
     }
 }
