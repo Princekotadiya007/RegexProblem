@@ -15,7 +15,7 @@ namespace RegexProgram
             while (flge)
             {
                 Console.WriteLine("Welcom to User Registration");
-                Console.WriteLine("\n1.ValidFirstName,\n2.ValidLastName,\n3.ValidEmaiId,\n4.MoblieNumber,\n5.PasswordRule1,\n6.PasswordRule2,\n7.PasswordRule3,\n8.PasswordRule4");
+                Console.WriteLine("\n1.ValidFirstName,\n2.ValidLastName,\n3.ValidEmaiId,\n4.MoblieNumber,\n5.PasswordRule1,\n6.PasswordRule2,\n7.PasswordRule3,\n8.PasswordRule4,\n9.AllEmailSamples");
                 Console.WriteLine("choose the option");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -46,6 +46,9 @@ namespace RegexProgram
                         regex.ValidatePasswordRule4("PRINCE07@");
                         break;
                     case 9:
+                        regex.AllEmail("abc@yahoo.com");//"abc-100@yahoo.com", "abc.100@yahoo.com", "abc111@abc.com", "abc-100@abc.net", "abc.100@abc.com.au", "abc@1.com", "abc@gmail.com.com", "abc+100@gmail.com"
+                        break;
+                    case 10:
                         flge = false;
                         break;
                 }

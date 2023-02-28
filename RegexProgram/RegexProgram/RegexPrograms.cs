@@ -107,5 +107,17 @@ namespace RegexProgram
                 Console.WriteLine("Password not Valid ");
             }
         }
+        public void AllEmail(string email)
+        {
+            string emailPatten = "^[0-9A-Za-z]+([._+-][0-9A-Za-z]+)*[@][0-9A-Za-z]+.[a-zA-Z]{2,3}(.[a-zA-Z]{2})?$";
+            if(Regex.IsMatch(email, emailPatten))
+            {
+                Console.WriteLine("Email is Valid");
+            }
+            else
+            {
+                Console.WriteLine("Email not Valid");
+            }
+        }
     }
 }
